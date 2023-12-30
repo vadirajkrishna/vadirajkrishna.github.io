@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Vadiraj Gulur Krishna - proj2</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">HOME</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html#proj1">BACK</a></li>
+							<li class="active"><a href="proj1.html">Detailed Project</a></li>
+							<!--<li><a href="elements.html">Elements Reference</a></li>-->
+						</ul>
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+							<li><a href="https://github.com/vadirajkrishna" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/vadirajkrishna/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<!--<span class="date">April 25, 2017</span>-->
+									<h1>SQL - Covid Deaths analysis</h1>
+								</header>
+								<!-- <div class="image main"><img src="images/pic01.jpg" alt="" /></div> -->
+								<p><i>Dataset & Code @</i><a href="https://github.com/vadirajkrishna/PowerBi_ML_Integration">GitHub</a>.<a class="icon brands fa-github"><span class="label">GitHub</span></a></p>
+								<p><i><b>Skills:</b> Microsoft SQL (Queries, sub-queries, CTE (common table expressions), views, joins, temporary tables), Integrating SQL with Pyton, Jupyter notebooks, Pandas, Plotly, Numpy , PowerBi for Dashboards</i></p>
+                                <p><b>Use Case:</b>Analyse the Covid 19 deaths on global scale using Microsoft SQL server. </p>
+                                <p><b>Challenge:</b>Sometimes data analysis involves working with millions of rows of data available in a database. Extracting this huge amount of data into CSV is not recommanded in this situation
+								.This is where we can use PYODBC driver to connect python to SQL server and read the data using SQL queries.</p>
+                                <p><b>Sample Data:</b></p>
+                                <p>Dataset used is from "Our World in Data" website can be found <a href="https://ourworldindata.org/covid-deaths">here</a>. The data is divided into two parts where one table contains the covid death details and other contains the vaccinations details. Number of rows in both table is around 360 thousand rows.
+								<br>Covid Deaths table
+								</p>
+                                <a href="#" class="image fit", id="proj1"><img src="images/covid_deaths_table.jpg" alt="" /></a>
+								<br>Covid Vaccinations table
+								</p>
+                                <a href="#" class="image fit", id="proj1"><img src="images/covid_vaccinations.jpg" alt="" /></a>
+                                <p><b>Data Model: Not Applicable as separate analysis done on these two tables</b></p>
+                                <!-- <a href="#" class="image fit", id="proj1"><img src="images/data_model.jpg" alt="" /></a> -->
+                                <p><b>High Level Analysis:</b></p>
+                                <a href="#" class="image fit", id="proj1"><img src="images/covid_19_dashboard.png" alt="" /></a>
+                                <p><i>Observations:</i></p>
+                                <ul  style="text-indent: 25px;">
+                                    <li>Around 1% of total population succumbed to Covid-19 till date.</li>
+                                    <li>North America has highest deaths with more than 1M people lost lives whereas Oceania has least amount of deaths among other continents.</li>
+                                    <li>Countries in Europe has highest infection rates when compared to others.</li>
+                                </ul>
+                                <p><b>Detailed Analysis: </b><br>
+                            	</b></p>
+                                <a href="#" class="image fit", id="proj1"><img src="images/death_ratio_per_infected.png" alt="" /></a>
+								<a href="#" class="image fit", id="proj1"><img src="images/percent_population_affected.png" alt="" /></a>
+                                <!-- <p><b>Observation: </b>The model predicts values close enough to the actuals.</p> -->
+								<a href="#" class="image fit", id="proj1"><img src="images/infected_population_ratio_across_continents.png" alt="" /></a>
+								<a href="#" class="image fit", id="proj1"><img src="images/death_ratio_per_continent.png" alt="" /></a>
+								<a href="#" class="image fit", id="proj1"><img src="images/progression_of_cases_by_month_and_year.png" alt="" /></a>
+								<p><b>Note: </b>Shows the cumulative total by month and year.</p>
+								<a href="#" class="image fit", id="proj1"><img src="images/progression_of_new_cases_on_daily_basis.png" alt="" /></a>
+								<p><b>Note: </b>Shows change in numbers on monthly basis. We can see spikes in cases by the beginning and end of the year 2022.</p>
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+<!-- 					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer> -->
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy;  Vadiraj Gulur Krishna</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
